@@ -12,7 +12,12 @@ class ProductSaved extends \Mim\Model
 
     protected static $table = 'product_saved';
 
-    protected static $chains = [];
+    protected static $chains = [
+    	'product' => [
+            'model' => 'Product\\Model\\Product',
+            'field' => 'id'
+        ]
+    ];
 
     protected static $q = [];
 }

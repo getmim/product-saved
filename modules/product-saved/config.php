@@ -2,7 +2,7 @@
 
 return [
     '__name' => 'product-saved',
-    '__version' => '0.0.1',
+    '__version' => '0.0.2',
     '__git' => 'git@github.com:getmim/product-saved.git',
     '__license' => 'MIT',
     '__author' => [
@@ -38,6 +38,16 @@ return [
     ],
     'libFormatter' => [
         'formats' => [
+            'product' => [
+                'saved' => [
+                    'type' => 'partial',
+                    'model' => [
+                        'name' => 'ProductSaved\\Model\\ProductSaved',
+                        'field' => 'product'
+                    ],
+                    'format' => 'product-saved'
+                ]
+            ],
             'product-saved' => [
                 'id' => [
                     'type' => 'number'
