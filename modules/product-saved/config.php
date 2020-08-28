@@ -38,16 +38,6 @@ return [
     ],
     'libFormatter' => [
         'formats' => [
-            'product' => [
-                'saved' => [
-                    'type' => 'partial',
-                    'model' => [
-                        'name' => 'ProductSaved\\Model\\ProductSaved',
-                        'field' => 'product'
-                    ],
-                    'format' => 'product-saved'
-                ]
-            ],
             'product-saved' => [
                 'id' => [
                     'type' => 'number'
